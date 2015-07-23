@@ -1,0 +1,18 @@
+{
+  "name": "weather forecast spa",
+  "version": "0.0.0",
+  "authors": [
+    "Brian van Vlymen <dontgizeup@yahoo.com>"
+  ],
+  "description": "weather forecast spa",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.3.17",
+    "angular-resource": "~1.3.17"
+  },
+  "install": {
+    "path": "client/libs"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "WEATHER",
+  "version": "0.0.0",
+  "description": "weather forecast SPA (single page application)",
+  "main": "server.js",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "angular-route": "^1.4.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}

@@ -1,6 +1,34 @@
 <div class="row">
+    <div class="col-md-3">
+        <form ng-submit="submit()">
+            <div class="form-group">
+                <input type="text" placeholder="San Antonio, Tx" class="form-control" />
+            </div>
+                <input type="submit" value="San Antonio, Tx" class="btn btn-primary">
+        </form>
+    </div>
+    <div class="col-md-6">
+        <carousel interval="myInterval">
+          <slide ng-repeat="slide in slides" active="slide.active">
+            <a href="{{slide.link}}">
+                <img ng-src="{{slide.image}}" style="margin:auto; height:250px; width:400px">
+            </a>
+          </slide>
+        </carousel>
+    </div>
+    <div class="col-md-3">
+        <form ng-submit="submit()">
+            <div class="form-group">
+                <input type="text" placeholder="Los Angeles, Ca" ng-model="city" class="form-control" />
+            </div>
+                <input type="submit" value="Los Angeles, Ca" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <h4>Forecast by City</h4>
+        <h4 class="text-center">Forecast by City</h4>
         <form ng-submit="submit()">
 	        <div class="form-group">
 	            <input type="text" ng-model="city" class="form-control" />

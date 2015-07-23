@@ -10,7 +10,8 @@
     "angular": "~1.4.3",
     "bootstrap": "~3.3.5",
     "angular-route": "~1.3.17",
-    "angular-resource": "~1.3.17"
+    "angular-resource": "~1.3.17",
+    "angular-bootstrap": "~0.13.1"
   },
   "install": {
     "path": "client/libs"

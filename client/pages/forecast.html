@@ -1,14 +1,17 @@
 <p>
     <a href="#/">Back to Search</a>
 </p>
-
-Forecast for {{ city }}
+<div class="text-center">
+    <h1>Forecast for <em>{{ city }}</em></h1>
+    <p>if BELOW 80 degree is <span style="color:blue;">BLUE</span> color, cool weather!</p>
+    <p>if OVER 80 degree is <span style="color:red;">RED</span> color, hot weather!</p>
+</div>
 <hr />
-Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
+Days: <a href="#/forecast/2" ng-class="{ 'bg-primary btn': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary btn': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary btn': days === '7' }">7</a>
 <hr />
-<div ng-repeat="w in weatherResult.list">
-    <div class="row">
-        <div class="col-md-12">
+<div class="row">
+    <div ng-repeat="w in weatherResult.list">
+        <div class="col-md-3">
             <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
         </div>
     </div>
